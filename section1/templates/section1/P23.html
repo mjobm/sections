@@ -1,0 +1,37 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>Payment:</p>
+        <p>
+            The computer will randomly chose if you will be paid for the
+            role of person 1 or the role of person 2.
+        </p>
+        <p>
+            If the computer picks you to take up the role of person 1,
+            you will earn the payoff you chose for yourself if person 2 accepts your offer.
+            Otherwise, you and person 2 will earn nothing.
+        </p>
+        <p>
+            If the computer picks you to take up the role of person 2,
+            you will earn the payoff that person 1 that you are paired with
+            chose for person 2 but only if you had accepted that particular offer.
+            Otherwise, you both earn nothing.
+        </p>
+        <p>
+            You will only learn at the very end of today‘s session how much you earned in
+            this activity.
+        </p>
+        <p>
+            We will give you an example on decisions of a person 1 and
+            a person 2 and the resulting payoffs on  the following pages.
+        </p>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-6">
+                <p>
+                    What is the minimum (and equal) amount x where you would switch
+                    from the left allocation to the right allocation?
+                </p>
+                {% formfield player.ctrl_p21_qn_1_1b with label="" %}
+            </div>
+        </div>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

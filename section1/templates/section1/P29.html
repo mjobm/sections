@@ -1,0 +1,22 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>
+            You are now making your decision for the role of person 2:
+        </p>
+        <p>
+            Person 1 received GHC 8. How much does he/she needs to pass
+            on to you (from GHC 8) that you would accept the offer?
+        </p>
+        <p> </p>
+        {% formfield player.ctrl_p29_qn_1_1c with label="Your decision GHC" %}
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

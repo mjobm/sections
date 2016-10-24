@@ -1,0 +1,37 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>
+            {% formfield player.ctrl_p12_qn_1_1a with label="" %}
+            <img src="{{STATIC_URL}}imgs/page_7_img.png" width="100%">
+        </p>
+        <p>
+            {% formfield player.ctrl_p12_qn_2_1a with label="" %}
+            <img src="{{STATIC_URL}}imgs/page_11_img.png" width="100%">
+        </p>
+        <p>
+            {% formfield player.ctrl_p12_qn_3_1a with label="" %}
+            <img src="{{STATIC_URL}}imgs/page_12_2_img.png" width="100%">
+        </p>
+        <p>
+            {% formfield player.ctrl_p12_qn_4_1a with label="" %}
+            <img src="{{STATIC_URL}}imgs/page_12_3_img.png" width="100%">
+        </p>
+        <p>
+            {% formfield player.ctrl_p12_qn_5_1a with label="" %}
+            <img src="{{STATIC_URL}}imgs/page_12_4_img.png" width="100%">
+        </p>
+        <p>
+            {% formfield player.ctrl_p12_qn_6_1a with label="" %}
+            <img src="{{STATIC_URL}}imgs/page_12_5_img.png" width="100%">
+        </p>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

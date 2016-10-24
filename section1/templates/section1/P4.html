@@ -1,0 +1,24 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>
+            There are two roles in this activity: roleA (in the following person A) and role B (in the following person B). Person A has to actively decide how to allocate coins between person B and himself/herself. Person B has to accept the preferred allocation by person A.
+        </p>
+        <p>
+            All persons will actively decide in the role of person A– however, for which role (A or B) you will be paid will be randomly chosen by the computer.
+        </p>
+        <p>
+            On the following page, we will explain the activity in further detail.
+        </p>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}
+
+

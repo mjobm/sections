@@ -1,0 +1,33 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{STATIC_URL}}imgs/page_15_img.png" width="100%">
+            </div>
+            <div class="col-md-6">
+                <p>Payment:</p>
+                <p>
+                    In the picture, you see two columns "left" and "right".
+                    There are eight different decisions. The computer will randomly pick one of these eight decisions.
+                    This decision will be implemented for payment.
+                </p>
+                <p>
+                    The minimum amount x is the amount from where on you prefer the right (and equal)
+                    money allocation over the left money allocation.
+                </p>
+                <p>
+                    We give you two examples on the next two pages.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

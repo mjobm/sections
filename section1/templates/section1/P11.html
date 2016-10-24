@@ -1,0 +1,17 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>You finished the control questions!</p>
+        <p>Now you are ready to take your final decisions.</p>
+        <p>Please take your time and think carefully about your preferred allocation.</p>
+    </div>
+</div>
+<p><strong>Please click "Next" if you are ready to begin</strong>.</p>
+{% next_button %}
+{% endblock %}

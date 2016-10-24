@@ -1,0 +1,24 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>
+            In this subsection, we will offer you six different lotteries. These lotteries can have two outcomes:
+            a high outcome (state A) or a low outcome (state B). It is randomly decided by a coin flip by the computer,
+            which state will be realized. (Heads and tails are equally likely).
+        </p>
+        <p>
+            You have to select one of the six lotteries. That should be the one that you prefer most.
+        </p>
+        <p>
+            On the next page, we give you an example how the lotteries will look like.
+        </p>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

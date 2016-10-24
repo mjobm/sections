@@ -1,0 +1,31 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        {% formfield player.ctrl_p6_qn_1_1a with label="your decision" %}
+        <img src="{{STATIC_URL}}imgs/page_5_img.png" width="100%">
+        <p>
+            Example: A participant in role A decided for allocation 5.
+            If this decision set is chosen for payment, person A would receive 68 coins.
+            The person he/she is matched with, would receive 58 coins.
+        </p>
+        <p>
+            The task of the person in role A is to decide on the preferred allocation by marking one of the nine money allocations.
+            The marked distribution will determine the payments of the person in role A and the person in role B.
+            Only ONE distribution can be marked in each question.
+        </p>
+        <p>
+            Next, we will ask you three control questions to check for your understanding
+        </p>
+    </div>
+</div>
+<p><strong>Please click "Next" if you are ready</strong>.</p>
+{% next_button %}
+{% endblock %}
+
+

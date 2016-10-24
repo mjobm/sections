@@ -1,0 +1,36 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>
+            You finished section 1a. We will now start 	with section 1b.
+        </p>
+        <p>
+            We start now with the instructions for subsection 1b.
+        </p>
+        <p>
+            Similar to subsection 1a, you will be paired with one other participant in the room.
+            With whom you are matched, is randomly assigned by the computer.
+        </p>
+        <p>
+           You will not learn who this other participant is and the participant
+            you are matched with will not learn who you are.
+        </p>
+        <p>
+            There are two roles in this activity (also similar to subsection 1a):
+            role A (in the following person A) and role B (in the following person B).
+            Person A has to actively decide how to allocate money between person B and himself/herself.
+            Person B has to accept the preferred allocation by person A.
+        </p>
+        <p>
+            On the following page, we will explain the activity in further detail.
+        </p>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

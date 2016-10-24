@@ -1,0 +1,39 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>We have finished subsection 1b and will now start with subsection 1c.</p>
+        <p>You have finished section 1b. Now, we move on to section 1c.</p>
+        <p>
+            We start now with the instructions for phase 1c.In this phase 1c,
+            the computer will randomly pair you with one other participant in the room.
+            You will not learn who this other participant is and the participant you are
+            matched with will not learn who you are.
+        </p>
+        <p>In this section, the situation is as follows:</p>
+        <p>
+            Person 1 is matched with person 2. Person 1 will receive GHC 8 and can decide how
+            much of the GHC 8, he/she wants to pass on to person 2.
+        </p>
+        <p>
+            Person 2 knows that person 1 has been called to make this decision,
+            and may either accept the distribution chosen by person 1, or reject it.
+        </p>
+        <p>
+            In case that person 2 accepts person 1’s proposed distribution,
+            that distributions will be implemented. If person 2 rejects the offer, both receive nothing.
+        </p>
+        <p>
+            You will have to make decisions as if you were person 1 and also as if you were person 2.
+            In the latter case, you will have to decide when you would accept or
+            reject possible distributions offered by person 1.
+        </p>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

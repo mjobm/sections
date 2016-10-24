@@ -1,0 +1,23 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p><strong>Payment:</strong></p>
+        <p>
+            You will make decisions for six different decision sets.
+            The computer will randomly decide for which role you are paid.
+            The computer will randomly pick one of the decision sets for payment.
+            You will only learn which decision set was drawn,
+            for which role you are paid and how much you earned at the very end of today's workshop.
+        </p>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}
+
+

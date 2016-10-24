@@ -1,0 +1,70 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <ul>
+                    <li>
+                        <p>A person A is asked:</p>
+                        <p>
+                            What is the minimum equal amount x where you would switch from the
+                            left allocation to the right allocation?
+                        </p>
+                        <p>
+                            Minimum x: <strong>1</strong>
+                        </p>
+                        <p>
+                            The computer picks decision number 4 for payment.
+                            How much does participant A earn?
+                        </p>
+                        <p>
+                            {% formfield player.ctrl_p19_qn_1_1b with label="" %}
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                           A person A is asked:
+                        </p>
+                        <p>
+                            What is the minimum equal amount x where you would switch from the left
+                            allocation to the right allocation?
+                        </p>
+                        <p>
+                            Minimum x: <strong>7</strong>
+                        </p>
+                        <p>
+                            The computer picks decision number 5 for payment.
+                            How much does participant B earn?
+                        </p>
+                        <p>
+                            {% formfield player.ctrl_p19_qn_2_1b with label="" %}
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>A person A is asked:</p>
+                        <p>
+                            What is the minimum equal amount x where you would switch from the left allocation to the right allocation?
+                        </p>
+                        <p>
+                            Minimum x: <strong>5</strong>
+                        </p>
+                        <p>
+                            {% formfield player.ctrl_p19_qn_3_1b with label="" %}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>
+            You finished reading the instructions and answered the control questions.
+            You are now ready to make your final decisions. You will first make your decision
+            in the role of person 1. Afterwards, you will make your decision in the role of person 2.
+        </p>
+    </div>
+</div>
+<p><strong>Please click "Next" if you are ready</strong>.</p>
+{% next_button %}
+{% endblock %}

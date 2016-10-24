@@ -1,0 +1,22 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>
+            Section 1 contains 5 subsections: 1a, 1b, 1c, 1d and 1e.
+        </p>
+        <p>
+            We start with subsection 1a.
+        </p>
+    </div>
+</div>
+<p><strong>Please click "Next" to continue</strong></p>
+{% next_button %}
+{% endblock %}
+
+

@@ -1,0 +1,98 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <ul>
+            <li>
+                <p>In the scenario above: How much does person 1 earn? How much does person 2 earn?</p>
+                <p>Person 1 earns:</p>
+                 <ul>
+                    <li>GHC 0</li>
+                    <li>GHC 7</li>
+                    <li>GHC 4</li>
+                </ul>
+                <p> </p>
+                 <ul>
+                    <li>GHC 0</li>
+                    <li>GHC 3</li>
+                    <li>GHC 4</li>
+                </ul>
+                <p> </p>
+                <p>
+                    Person 1 is asked: How much of the GHC 8 would you pass on to person 2?
+                    It could be any amount between 0 and  8 but only full amounts
+                    (0,1, 2, 3, 4, 5, 6, 7 or 8).
+                </p>
+                <p> </p>
+                <p>Decision of person 1: <strong>GHC 1</strong></p>
+                <p> </p>
+                <p>
+                    Person 1 received GHC 8. How much does he/she needs to pass on to you
+                    (from GHC 8) that you would accept the offer?
+                </p>
+                <p>Decision of person 2: <strong>GHC 4</strong></p>
+            </li>
+            <li>
+                <p>Look at the scenario above. How much does person 1 earn? How much does person 2 earn?</p>
+                <p>Person 1 earns:</p>
+                <ul>
+                    <li>GHC 0</li>
+                    <li>GHC 2</li>
+                    <li>GHC 4</li>
+                </ul>
+                <p> </p>
+                <ul>
+                    <li>GHC 0</li>
+                    <li>GHC 6</li>
+                    <li>GHC 4</li>
+                </ul>
+                <p> </p>
+                <p>
+                    Person 1 is asked: How much of the GHC 8 would you pass on to person 2?
+                    It could be any amount between 0 and  8 but only full amounts (0,1, 2, 3, 4, 5, 6, 7 or 8).
+                </p>
+                <p> </p>
+                <p>Decision of person 1: <strong>GHC 4</strong></p>
+                <p>
+                    Person 1 received GHC 8.
+                    How much does he/she needs to pass on to you (from GHC 8) that you would accept the offer?
+                </p>
+                <p>Decision of person 2: <strong>GHC 4</strong></p>
+            </li>
+            <li>
+                <p>Look at the scenario above. How much does person 1 earn? How much does person 2 earn?</p>
+                <p>Person 1 earns:</p>
+                 <ul>
+                    <li>GHC 0</li>
+                    <li>GHC 1</li>
+                    <li>GHC 7</li>
+                </ul>
+                <p> </p>
+                 <ul>
+                    <li>GHC 0</li>
+                    <li>GHC 1</li>
+                    <li>GHC 7</li>
+                </ul>
+                <p> </p>
+                <p>
+                    Person 1 is asked: How much of the GHC 8 would you pass on to person 2?
+                    It could be any amount between 0 and  8 but only full amounts (0,1, 2, 3, 4, 5, 6, 7 or 8).
+                </p>
+                <p> </p>
+                <p>Decision of person 1: <strong>GHC 7</strong></p>
+                <p>
+                    Person 1 received GHC 8.
+                    How much does he/she needs to pass on to you (from GHC 8) that you would accept the offer?
+                </p>
+                <p>Decision of person 2: <strong>GHC 1</strong></p>
+            </li>
+        </ul>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

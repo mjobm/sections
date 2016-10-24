@@ -1,0 +1,62 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <ul>
+            <li>
+                <p>Example I:</p>
+                <p>
+                    Person 1 is asked: How much of the GHC 8 would you pass on to person 2?
+                    It could be any amount between 0 and  8 but only full amounts (1, 2, 3, 4, 5, 6, 7 or 8).
+                </p>
+                <p>Decision of person 1: <strong>GHC 3</strong></p>
+                <p> </p>
+                <p>
+                    Person 2 is asked at the same time: Person 1 received GHC 8.
+                    How much does he/she needs to pass on to you (from GHC 8) that you
+                    would accept the offer?
+                </p>
+                <p>Decision of person 2: <strong>GHC 2</strong></p>
+                <p> </p>
+                <p>
+                    Payment: Person 1 would pass on GHC 3. Person 2 only claims GHC 2 to accept the offer.
+                    Therefore this distribution will be implemented. Person 1 earns GHC 5 (GHC 8 – GHC 3 = GHC 5).
+                    Person 2 earns GHC 3.
+                </p>
+                <p>
+                    We will give you one other example on the next page.
+                </p>
+            </li>
+            <li>
+                <p>Example II:</p>
+                <p>
+                    Person 1 is asked: How much of the GHC 8 would you pass on to person 2?
+                    It could be any amount between 0 and  8 but only full amounts (1, 2, 3, 4, 5, 6, 7 or 8).
+                </p>
+                <p>
+                    Decision of person 1: <strong>GHC 5</strong>
+                </p>
+                <p>
+                    Person 2 is asked at the same time: Person 1 received GHC 8. How much does he/she needs to pass
+                    on to you (from GHC 8) that you would accept the offer?
+                </p>
+                <p>
+                    Decision of person 2: <strong>GHC 7</strong>
+                </p>
+                <p>Payment: </p>
+                <p>
+                    Person 1 would pass on GHC 5. However, person 2 claims GHC 7 to accept the offer.
+                    Therefore this distribution will not be implemented. Person 1 earns GHC 0.
+                    Person 2 earns GHC 0
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

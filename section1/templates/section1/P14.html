@@ -1,0 +1,34 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>
+            In the role of person A, you will make a decision for a money allocation.
+            The decision is illustrated below. You can
+        </p>
+        <ul>
+            <li>
+                either decide for a money allocation where you receive GHC 8 and person B receives GHC 0
+                (decision left in the picture)
+            </li>
+            <li>
+                or you decide for an allocation that gives you and person B the same amount x.
+                The "amount  x" can be 1, 2, 3, 4, 5, 6, 7, 8. (decision right in the picture)
+            </li>
+        </ul>
+        <p>
+            You will decide on the minimum amount x where you would prefer "right" to "left".
+        </p>
+        <p>
+            At the following page, we explain how the payoff will be determined for this activity.
+        </p>
+        <img src="{{STATIC_URL}}imgs/page_14_img.png" width="100%">
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

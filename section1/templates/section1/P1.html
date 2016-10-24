@@ -1,0 +1,38 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <ol>
+            <li>
+                <p>Are you male or female?</p>
+                {% formfield player.ctrl_p1_qn_1_1a with label="" %}
+            </li>
+            <li>
+                <p>
+                    Generally speaking, would you say that most people can be trusted or that you need to be very careful in dealing with people?
+                    Please answer on a scale from 1 to 10 whereas 1 means “need to be very careful” and 10 means “most people can be trusted”. .
+                    Please choose one number between 1 and 10.
+                </p>
+                {% formfield player.ctrl_p1_qn_2_1a with label="" %}
+                <img src="{{STATIC_URL}}imgs/page_1_img.png" width="100%">
+            </li>
+            <li>
+                <p>
+                    Do you think most people would try to take advantage of you if they got a chance,
+                    or would they try to be fair? Please answer on a scale from 1 to 10 whereas 1 means
+                    "people would try to take advantage" and 10 means "people would try to be fair".
+                    Please choose one number between 1 and 10.
+                </p>
+                {% formfield player.ctrl_p1_qn_3_1a with label="" %}
+                <img src="{{STATIC_URL}}imgs/page_1_img.png" width="100%">
+            </li>
+        </ol>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}

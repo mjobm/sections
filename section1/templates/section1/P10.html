@@ -1,0 +1,53 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <ul>
+            <li>
+                <p>
+                    Look at the decision set below. A participant in role A has decided for allocation 7 (see below).
+                    How much would person B earn when this decision set is picked for payment?
+                </p>
+                <p>1) 36</p>
+                <p>2) 100</p>
+                <p>3) 15</p>
+                {% formfield player.ctrl_p10_qn_1_1a with label="" %}
+                <img src="{{STATIC_URL}}imgs/page_7_img.png" width="100%">
+            </li>
+
+            <li>
+                <p>
+                    Look at the decision set below. Person A can decide for one coin allocation.
+                    Which allocation number yields the highest payoff for person B?
+
+                </p>
+                <p>1) 9</p>
+                <p>2) 3</p>
+                <p>3) 1</p>
+                {% formfield player.ctrl_p10_qn_2_1a with label="" %}
+                <img src="{{STATIC_URL}}imgs/page_7_img.png" width="100%">
+            </li>
+
+            <li>
+                <p>
+                    Look at the decision set below. Person A can decide for one coin allocation.
+                    For which allocation does person A decide if he/she wants to have the same payoff as person B?
+                </p>
+                <p>1) 1</p>
+                <p>2) 5</p>
+                <p>3) 7</p>
+                {% formfield player.ctrl_p10_qn_3_1a with label="" %}
+                <img src="{{STATIC_URL}}imgs/page_10_img.png" width="100%">
+            </li>
+        </ul>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}
+
+

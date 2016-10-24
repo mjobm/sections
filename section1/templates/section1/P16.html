@@ -1,0 +1,42 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{STATIC_URL}}imgs/page_15_img.png" width="100%">
+            </div>
+            <div class="col-md-6">
+                <p>Example I:</p>
+                <p>
+                    What is is the minimum (and equal) amount x where you would
+                    switch from the left allocation to the right allocation?
+                </p>
+                <p>
+                    Minimum x: <strong>3</strong>
+                </p>
+                <p>Payoffs:</p>
+                <p>
+                    The person A decided that the minimum equal amount x where he/she would
+                    would switch from left to right is GHC 3.
+                    The purple line on the right indicates the switching point at x=3.
+                    From there on, person A always prefers equal outcomes over the
+                    money allocation on the left.
+                </p>
+                <p>
+                    The computer randomly picks one decision for payment.
+                    Let us assume the computer picks decision 3.
+                    The payoff for both, person A and person B would be GHC 3 in this case.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% next_button %}
+{% endblock %}
